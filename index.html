@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <!--Page name and favicon-->
+  <title>TIE Fighter 3D View</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+  <style>
+    <!--Background image-->
+    body {
+      background-image: url("images/bg.png");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+
+      width: 100%;
+      height: 100vh;
+    }
+  </style>
+
+  <!--The model script code comes from this website: https://modelviewer.dev/-->
+  <!-- Import the component -->
+  <script type="module" src="scripts/model-viewer.min.js"></script>
+</head>
+<body>
+    <!-- Use it like any other HTML element -->
+    <model-viewer src="models/tiefighter.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+    </model-viewer>
+
+    <h1>tie fighter</h1>
+</body>
+</html>
