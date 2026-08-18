@@ -14,8 +14,20 @@
   <script type="module" src="scripts/model-viewer.min.js"></script>
 </head>
 <body>
-    <!-- Use it like any other HTML element -->
-    <model-viewer src="models/tiefighter.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="0" exposure="1" disable-pan disable-tap skybox-image="images/bg.png">
+    <!--Model viewer-->
+    <model-viewer
+      src="models/tiefighter.glb"
+      ar
+      ar-modes="webxr scene-viewer quick-look"
+      camera-controls
+      tone-mapping="neutral"
+      poster="poster.webp"
+      shadow-intensity="0"
+      exposure="1"
+      disable-pan
+      disable-tap
+      skybox-image="images/bg.png"
+      environment-image="neutral">
     </model-viewer>
 </body>
 </html>
