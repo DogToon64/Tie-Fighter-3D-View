@@ -11,23 +11,23 @@
 
   <!--The model script code comes from this website: https://modelviewer.dev/-->
   <!-- Import the component -->
-  <script type="module" src="scripts/model-viewer.min.js"></script>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
 </head>
 <body>
     <!--Model viewer-->
     <model-viewer
-      src="models/tiefighter.glb"
-      ar
-      ar-modes="webxr scene-viewer quick-look"
+      src = "models/tiefighter.glb"
+      alt = "Tie Fighter"
       camera-controls
-      tone-mapping="neutral"
-      poster="poster.webp"
-      shadow-intensity="0"
-      exposure="1"
+      tone-mapping = "neutral"
+      poster = "images/poster.png"
+      shadow-intensity = "0"
+      exposure = "0"
       disable-pan
       disable-tap
-      skybox-image="images/bg.png"
-      environment-image="neutral">
+      <!--skybox-image = "images/bg.png"-->
+      style = "width: 100%; height: 600px; background-image: url("images/bg.png");"
+      environment-image = "neutral">
     </model-viewer>
 </body>
 </html>
